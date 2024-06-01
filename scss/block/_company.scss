@@ -1,0 +1,168 @@
+.titles__company {
+  font-family: "Exo 2";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.company__card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+._card_about_title {
+  padding-top: 15px;
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.3px;
+  text-align: center;
+}
+._card_about_text {
+  max-width: 175px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  text-align: center;
+}
+.company__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 40px;
+}
+.company__cards1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .company__cards1 {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+  }
+  .company__card {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    //   gap: 40px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+}
+@media (min-width: 1200px) {
+  .company__cards1 {
+    // display: block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .company__cards {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    // gap: 40px;
+  }
+  .company__card {
+    width: 500px;
+  }
+  .company_card_img {
+    img {
+      width: 100px;
+    }
+  }
+  ._card_about_text {
+    padding-bottom: 20px;
+  }
+}
+
+.founder_title_ {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-family: "Exo 2";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: left;
+}
+.founder__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.founder_card_title {
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.founder_text {
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.line_founder {
+  width: 90px;
+  height: 3px;
+  background-color: orange;
+  margin-bottom: 15px;
+}
+.founder__socials {
+  img:nth-child(2) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .founder__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .founder__card {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .founder__card {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .founder__card {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .founder__img {
+    img {
+      width: 130px;
+    }
+  }
+}
